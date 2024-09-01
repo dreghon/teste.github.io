@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo?</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Aceita namorar comigo?</h2>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
+        </div>
+    </div>
+    <audio autoplay>
+        <source src="https://mbeta.123tokyo.xyz/get.php/f/08/izGwDsrQ1eQ.mp3?cid=MmEwMTo0Zjg6YzAxMjozOWJlOjoxfE5BfERF&h=K50azXSxAHQQxPURek5ZHg&s=1699921916&n=George%20Michael%20-%20Careless%20Whisper%20%28Official%20Video%29&cid2=MmEwMjo0NzgwOjI3OjoyMHxGUnxSSUFMdURHbkRFZkwya3pvWA%3D%3D&dom=Iframe" type="audio/mp3">
+    </audio>
+</body>
+
+<style>
+    #conteudo {
+        background-image: url('./imagem/namoro.png');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+        font-size: 30px;
+    }
+
+    .btn {
+        background: rgba(214, 35, 35, 0.7);
+        color: white;
+        border: 1px solid black;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("🖤 Agora não tem volta meu chocolate branco! 🖤Obs: Clica no OK e veja alguns segundos do vídeo...");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://youtu.be/izGwDsrQ1eQ?si=gfIBmnCf_71GDt0o";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
+    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
+
+</script>
+
+</html>
